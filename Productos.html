@@ -22,7 +22,7 @@
     <input type="checkbox" name="" id="toggler">
     <label for="toggler" class="fas fa-bars"></label>
 
-    <a href="#" class="logo">Beliad<span>.</span></a>
+    <a href="index.html" class="logo">Beliad<span>.</span></a>
 
     <nav class="navbar">
         <a href="index.html">Inicio</a>
@@ -48,728 +48,123 @@
 
     <h1 class="heading"> Productos màs <span>buscados</span> </h1>
 
-    <div class="box-container">
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Sueter</p>
+                    <span class="precio">$ 240.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Falda estampada </p>
+                    <span class="precio">$ 378.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Tacones negros mate
+                    </p>
+                    <span class="precio">$ 476.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bolso negro</p>
+                    <span class="precio">$ 780.00</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Blazer verano</p>
+                    <span class="precio">$ 570.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Blusa con olanes</p>
+                    <span class="precio">$ 347.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-8.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Vestido abotonado</p>
+                    <span class="precio">$ 528.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-9.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Vestido con cinturon</p>
+                    <span class="precio">$ 831.00</span>
+                </div>
+            </div> 
+            
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Descripción Descripción Descripción Descripción Descripción</p>
 
-        <div class="box">
-            <span class="discount">-10%</span>
-            <div class="image">
-                <img src="images/img-1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Sueter Tejido</h3>
-                <div class="price"> $189.99 <span>$267.99</span> </div>
+                <span class="precio" id="precio">$ 130</span>
+                
+                <div class="fila">
+                  <center>  <div class="size">
+                        <label for="">Tallas</label>
+                        <select name="" id="">
+                            <option value="">Extra chica</option>
+                            <option value="">Chica</option>
+                            <option value="">Mediana</option>
+                            <option value="">Grande</option>
+                            <option value="">XL</option>
+                            <option value="">XXL</option>
+                        </select>
+                        
+                       
+                    </div></center>
+                  <center>  <div class="colores">
+                        <label for="">Colores</label>
+                        <select name="" id="">
+                            <option value="">Blanco</option>
+                            <option value="">Beige</option>
+                            <option value="">Amarillo</option>
+                            <option value="">Rojo</option>
+                            <option value="">Rosa</option>
+                            <option value="">Negro</option>
+                            <option value="">Azul</option>
+                        </select>
+                    </div></center>
+                <br>
+                
+                
+                 <br> 
+        
+                
+                <button>Comprar</button>
+                
+               
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <span class="discount">-15%</span>
-            <div class="image">
-                <img src="images/img-2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>falda estampada</h3>
-                <div class="price"> $298.50 <span>$345.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-5%</span>
-            <div class="image">
-                <img src="images/img-3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Zapatillas negras</h3>
-                <div class="price"> $302.99 <span>$509.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Bolsa dama</h3>
-                <div class="price"> $156.99 <span>$308.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-17%</span>
-            <div class="image">
-                <img src="images/img-5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blazer rosa</h3>
-                <div class="price"> $590.99<span>$638.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-3%</span>
-            <div class="image">
-                <img src="images/img-6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blusa rosa palo</h3>
-                <div class="price"> $220.90 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-18%</span>
-            <div class="image">
-                <img src="images/img-7.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Conjunto marron</h3>
-                <div class="price"> $579.99 <span>$789.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-8.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido abotonado</h3>
-                <div class="price"> $306.99 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-9.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido baby blue</h3>
-                <div class="price"> $456.99 <span>$678.99</span> </div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-10%</span>
-            <div class="image">
-                <img src="images/img-1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Sueter Tejido</h3>
-                <div class="price"> $189.99 <span>$267.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-15%</span>
-            <div class="image">
-                <img src="images/img-2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>falda estampada</h3>
-                <div class="price"> $298.50 <span>$345.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-5%</span>
-            <div class="image">
-                <img src="images/img-3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Zapatillas negras</h3>
-                <div class="price"> $302.99 <span>$509.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Bolsa dama</h3>
-                <div class="price"> $156.99 <span>$308.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-17%</span>
-            <div class="image">
-                <img src="images/img-5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blazer rosa</h3>
-                <div class="price"> $590.99<span>$638.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-3%</span>
-            <div class="image">
-                <img src="images/img-6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blusa rosa palo</h3>
-                <div class="price"> $220.90 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-18%</span>
-            <div class="image">
-                <img src="images/img-7.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Conjunto marron</h3>
-                <div class="price"> $579.99 <span>$789.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-8.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido abotonado</h3>
-                <div class="price"> $306.99 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-9.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido baby blue</h3>
-                <div class="price"> $456.99 <span>$678.99</span> </div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-10%</span>
-            <div class="image">
-                <img src="images/img-1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Sueter Tejido</h3>
-                <div class="price"> $189.99 <span>$267.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-15%</span>
-            <div class="image">
-                <img src="images/img-2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>falda estampada</h3>
-                <div class="price"> $298.50 <span>$345.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-5%</span>
-            <div class="image">
-                <img src="images/img-3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Zapatillas negras</h3>
-                <div class="price"> $302.99 <span>$509.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Bolsa dama</h3>
-                <div class="price"> $156.99 <span>$308.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-17%</span>
-            <div class="image">
-                <img src="images/img-5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blazer rosa</h3>
-                <div class="price"> $590.99<span>$638.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-3%</span>
-            <div class="image">
-                <img src="images/img-6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blusa rosa palo</h3>
-                <div class="price"> $220.90 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-18%</span>
-            <div class="image">
-                <img src="images/img-7.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Conjunto marron</h3>
-                <div class="price"> $579.99 <span>$789.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-8.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido abotonado</h3>
-                <div class="price"> $306.99 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-9.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido baby blue</h3>
-                <div class="price"> $456.99 <span>$678.99</span> </div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-10%</span>
-            <div class="image">
-                <img src="images/img-1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Sueter Tejido</h3>
-                <div class="price"> $189.99 <span>$267.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-15%</span>
-            <div class="image">
-                <img src="images/img-2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>falda estampada</h3>
-                <div class="price"> $298.50 <span>$345.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-5%</span>
-            <div class="image">
-                <img src="images/img-3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Zapatillas negras</h3>
-                <div class="price"> $302.99 <span>$509.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Bolsa dama</h3>
-                <div class="price"> $156.99 <span>$308.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-17%</span>
-            <div class="image">
-                <img src="images/img-5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blazer rosa</h3>
-                <div class="price"> $590.99<span>$638.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-3%</span>
-            <div class="image">
-                <img src="images/img-6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blusa rosa palo</h3>
-                <div class="price"> $220.90 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-18%</span>
-            <div class="image">
-                <img src="images/img-7.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Conjunto marron</h3>
-                <div class="price"> $579.99 <span>$789.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-8.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido abotonado</h3>
-                <div class="price"> $306.99 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-9.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido baby blue</h3>
-                <div class="price"> $456.99 <span>$678.99</span> </div>
-            </div>
-        </div>
-        <div class="box">
-            <span class="discount">-10%</span>
-            <div class="image">
-                <img src="images/img-1.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Sueter Tejido</h3>
-                <div class="price"> $189.99 <span>$267.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-15%</span>
-            <div class="image">
-                <img src="images/img-2.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>falda estampada</h3>
-                <div class="price"> $298.50 <span>$345.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-5%</span>
-            <div class="image">
-                <img src="images/img-3.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Zapatillas negras</h3>
-                <div class="price"> $302.99 <span>$509.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-4.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Bolsa dama</h3>
-                <div class="price"> $156.99 <span>$308.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-17%</span>
-            <div class="image">
-                <img src="images/img-5.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blazer rosa</h3>
-                <div class="price"> $590.99<span>$638.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-3%</span>
-            <div class="image">
-                <img src="images/img-6.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Blusa rosa palo</h3>
-                <div class="price"> $220.90 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-18%</span>
-            <div class="image">
-                <img src="images/img-7.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Conjunto marron</h3>
-                <div class="price"> $579.99 <span>$789.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-8.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido abotonado</h3>
-                <div class="price"> $306.99 <span>$370.99</span> </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="discount">-20%</span>
-            <div class="image">
-                <img src="images/img-9.jpg" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Carrito</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Vestido baby blue</h3>
-                <div class="price"> $456.99 <span>$678.99</span> </div>
-            </div>
-        </div>
-
-
-    </div>
-
-</section>
+    <script src="js/script1.js"></script>
 </section>
 
 
