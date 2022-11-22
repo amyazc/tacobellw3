@@ -16,13 +16,18 @@
     
     <form class="box"  method="post">
         <a class="logo">Beliad<span>.</span></a>
-        <p>Iniciar sesion</p>
-        <input type="text" name="nameo" id="name"  placeholder="Correo"required />
-        <input type="password" placeholder="Contraseña" name="">
-        <input type="submit" value="login" name="">
-        <h6>¿No tienes cuenta? crea una <a href="nuevo.html">aqui</a></h6>
-    </form>
-
+                    
+                    <input type="text" name="nameo" id="name" placeholder="Correo" required/> 
+                    <input type="password" name="pass" id='password' placeholder="Contraseña" required />
+                    <button class="submit" type="submit" id='acceder'>Entrar</button>
+         
+        
+            <h6>¿No tienes cuenta? crea una <a href="nuevo.html">aqui</a></h6>
+        </form>
+       <div class='mensaje' id='mensaje'>
+            <h2 id='titulo-mensaje'>Mensaje</h2>
+            <p id='cuerpo-mensaje'>Cuerpo del Mensaje</p>
+            <button id='btn-mensaje'>Cerrar</button> </div>
     
 </body>
 </html>

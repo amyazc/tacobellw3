@@ -1,0 +1,7 @@
+[
+    {"Usuario_Id":1, "Correo": "TaniaLoaiza12@gmail.com", "Contresenia":"12345678", "Estado": "Activo", "rol":1},
+    {"Usuario_Id":2, "Correo": "KevinFa17@gmail.com", "Contresenia":"12345678", "Estado": "Activo", "rol":1},
+    {"Usuario_Id":3, "Correo": "CuteLittleThings@gmail.com", "Contresenia":"12345678", "Estado": "Activo", "rol":2},
+    {"Usuario_Id":4, "Correo": "AndreasWears.com", "Contresenia":"12345678", "Estado": "Activo", "rol":2},
+    {"Usuario_Id":5, "Correo": "PedroP@gmail.com", "Contresenia":"12345678", "Estado": "Activo", "rol":1}
+    ]

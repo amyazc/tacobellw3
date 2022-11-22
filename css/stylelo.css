@@ -51,7 +51,7 @@ body{
 
 }
 
-.box input[type ="email"],.box input[type = "password"]{
+.box input[type ="text"],.box input[type = "password"]{
     border:0;
     background: none;
     display: block;
@@ -66,12 +66,12 @@ body{
     transition: 0.25s;
 
 }
-.box input[type ="email"]:focus,.box input[type = "password"]:focus{
+.box input[type ="text"]:focus,.box input[type = "password"]:focus{
  width: 280px;
  border-color: #e84393;
 
 }
-.box input[type ="submit"]{
+button.submit{
     border:0;
     background: none;
     display: block;
@@ -85,8 +85,73 @@ body{
     border-radius: 24px;
     transition: 0.25s;
 }
-.box input[type ="submit"]:hover{
+button.submit:hover {
+    background: #e84393;
+    cursor: pointer;
+    
+}
+/*button.submit:active {
+    border: 1px solid #202020;
+    box-shadow: 0 0 10px 5px #252525 inset; 
+    -webkit-box-shadow:0 0 10px 5px #252525 inset ;
+    -moz-box-shadow: 0 0 10px 5px #252525 inset;
+    -ms-box-shadow: 0 0 10px 5px #252525 inset;
+    -o-box-shadow: 0 0 10px 5px #252525 inset;
+}*/
+.mensaje{
+    background-color:pink;
+    width:600px;
+    max-width: 100%;
+    min-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    /*text-align: center;*/
 
-background: #e84393;
+    position:fixed;
+    top:100px;
+    left:200px;		
+    
+    pointer-events: none;
+    opacity: 0;
+    height:50vh;
+    width:70vh;
+    /*margin:10px auto;*/
 
+}
+
+#btn-mensaje{
+    background-color: #000000;
+    font-family: sans-serif;
+    border:0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color:#fff;
+    font-size: 14px;
+    padding: 10px 15px;
+
+    position:absolute;
+    bottom:5px;
+
+    margin:2px auto;
+}
+
+.mensaje h2{
+    border-radius: 15px 15px 0 0;
+    background-color: pink;
+    color:white;
+    margin: 0;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.mensaje p{
+    background-color:pink;
+    opacity: 0.7;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.show{
+    pointer-events: auto;
+    opacity:1;
 }
