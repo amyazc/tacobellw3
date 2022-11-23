@@ -24,7 +24,7 @@ function mostrar_mensaje(titulo, mensaje){
     let cuerpo_msg = document.querySelector(".mensaje p");
  
     titulo_msg.innerText = "ERROR EN EL LOGUEO";
-    cuerpo_msg.innerText = "Cuenta inexistente, favor de crear una cuenta";
+    cuerpo_msg.innerText = "TUS CREDENCIALES ESTAN MAL";
     modal_mensaje.classList.add("show");
 
 

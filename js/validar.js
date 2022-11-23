@@ -1,7 +1,7 @@
 
 //Ver si existen los Datos del Json Tipo_Usuarios
 var Array_Tipo_Usuario;
-let url="json/Tipos_Usuarios.json";
+let url="Tipos_Usuarios.json";
 
 fetch(url)
 .then(respuesta => respuesta.json())
@@ -44,6 +44,8 @@ window.addEventListener("load",function(){
                     r_obj = r_arreglo[0];
                     let path = r_obj.Ref;
                     window.location.href = path;
+                    alert("Inicio de sesion correcto");
+                    
                 }
             }else{
                 let titulo = "Usuario Inactivo";

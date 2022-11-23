@@ -1,5 +1,5 @@
 [
-    {"Rol_Id":1, "Clase":"Cliente", "Ref":"//comprador.html"},
-    {"Rol_Id":2, "Clase":"Venededor", "Ref":"//Vendedor.html"}
+    {"Rol_Id":1, "Clase":"Cliente", "Ref":"comprador.html"},
+    {"Rol_Id":2, "Clase":"Venededor", "Ref":"vendedor.html"}
    
     ]
