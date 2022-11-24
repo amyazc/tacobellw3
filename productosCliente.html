@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icono.png">
+    <title>Beliad compra y venta</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="index.html" class="logo">Beliad<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="Productos.html">Productos</a>
+        <a href="review.html">review</a>
+        <a href="Contacto.html">contacto</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="Login.html" class="fas fa-user"></a>
+        <a href="#" class="fas fa-search "></a>
+        <a href="login2.html" class="fas fa-sign-out-alt" alt="Salir"></a>
+    </div>
+
+</header>
+<br>
+<br>
+<br>
+<br>
+<section class="products" id="products">
+
+    <h1 class="heading"> Productos màs <span>buscados</span> </h1>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Sueter</p>
+                    <span class="precio">$ 240.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>Falda estampada </p>
+                    <span class="precio">$ 378.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Tacones negros mate
+                    </p>
+                    <span class="precio">$ 476.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Bolso negro</p>
+                    <span class="precio">$ 780.00</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Blazer verano</p>
+                    <span class="precio">$ 570.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Blusa con olanes</p>
+                    <span class="precio">$ 347.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-8.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Vestido abotonado</p>
+                    <span class="precio">$ 528.00</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/img-9.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Vestido con cinturon</p>
+                    <span class="precio">$ 831.00</span>
+                </div>
+            </div> 
+            
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Descripción Descripción Descripción Descripción Descripción</p>
+
+                <span class="precio" id="precio">$ 130</span>
+                
+                <div class="fila">
+                  <center>  <div class="size">
+                        <label for="">Tallas</label>
+                        <select name="" id="">
+                            <option value="">Extra chica</option>
+                            <option value="">Chica</option>
+                            <option value="">Mediana</option>
+                            <option value="">Grande</option>
+                            <option value="">XL</option>
+                            <option value="">XXL</option>
+                        </select>
+                        
+                       
+                    </div></center>
+                  <center>  <div class="colores">
+                        <label for="">Colores</label>
+                        <select name="" id="">
+                            <option value="">Blanco</option>
+                            <option value="">Beige</option>
+                            <option value="">Amarillo</option>
+                            <option value="">Rojo</option>
+                            <option value="">Rosa</option>
+                            <option value="">Negro</option>
+                            <option value="">Azul</option>
+                        </select>
+                    </div></center>
+                <br>
+                
+                
+                 <br> 
+        
+                
+                <button>Comprar</button>
+                
+               
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script1.js"></script>
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Productos.html">Productos</a>
+            <a href="review.html">review</a>
+            <a href="Contacto.html">contactos</a>
+        </div>
+
+        <div class="box">
+            <h3>Màs enlaces</h3>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Mis ordenes</a>
+            <a href="#">Mis favoritos</a>
+        </div>
+
+        <div class="box">
+            <h3>Idiomas</h3>
+            <a href="#">Español</a>
+            <a href="#">Ingles</a>
+           
+        </div>
+
+        <div class="box">
+            <h3>Informaciòn de contacto</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">beliad@gmail.com</a>
+            <a href="#">Chihuahua, Mèxico - #2245</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Creado por: <span> Equipo 3 </span> | Todos los derechos reservados 2022.</div>
+    <div class="icons" style="color:black">
+        <a href="#" class="fas fa-facebook-f"></a>
+        <a href="#" class="fas fa-instagram"></a>
+        <a href="#" class="fas fa-twitter"></a>
+    
+    </div>
+</section>
+</body>
+</html>
