@@ -1,7 +1,7 @@
 
 //Ver si existen los Datos del Json Tipo_Usuarios
 var Array_Tipo_Usuario;
-let url="Tipos_Usuarios.json";
+let url="json/Tipos_Usuarios.json";
 
 fetch(url)
 .then(respuesta => respuesta.json())
