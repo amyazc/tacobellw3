@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icono.png">
+
+    <title>Beliad compra y venta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/stylechat.css">
+    <link rel="stylesheet" href="css/typing.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="index.html" class="logo">Beliad<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="Productos.html">Productos</a>
+        <a href="review.html">review</a>
+        <a href="Contacto.html">contacto</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="Login.html" class="fas fa-user"></a>
+        <a href="#" class="fas fa-search "></a>
+        <a href="#" class="fas fa-cog " alt="Ajustes"></a>
+    </div>
+    <script>function 
+        cambiar(uno){
+        var uno = uno;
+        alert('Operaciòn realizasa con èxito');
+          }</script>
+</header>
+<br>
+<br>
+<br>
+<br>
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Contacta con Nosotros o</span> el vendedor </h1>
+
+  <div class="row">
+
+        <form class="box"  method="post">
+            <h1 class="heading">Beliad<span>.</span></h1>
+            <center><h2>cambiar - cancelar compra</h2></center>
+            <center><p style="font-size: 15px;">Que operaciòn desea realizar</p></center>
+            <center><select type="scroll" style="font-size:20px">
+                <option selected> ---</option>
+                <option value="1.htm">Cancelar compra</option>
+                <option value="2.htm">Cambiar compra</option>
+                </select></center>
+            <input type="email" placeholder="Correo" class="box" required>
+            <input type="text" placeholder="Còdigo de venta (id venta)" class="box" required>   
+            <input type="date" placeholder="Fecha de compra" class="box" style="color:gray" required>
+            <textarea name="" class="box" placeholder="Describa la circunstacia o motivos para realizar la operaciòn, ejemplo: Talla de calzado incorrecta" id="" cols="30" rows="10" required></textarea>
+            <center><p style="font-size: 10px;">Nota: para realizar cancelaciones tiene como limite 3 dìas habiles despuès de su compra,<br>
+                 para realizar cambios el lìmite es de 8 dìas habiles</p></center>
+          
+          <center> <button class="btn" type="submit" value="Enviar" onclick='cambiar(1)'> <a href="productosCliente.html" style="text-decoration:none; color:whitesmoke" >Enviar</a></button></center> 
+        </form>
+         
+        <div class="image">
+            
+        </div>
+
+    </div>
+
+</section>
+
+<!--Termina codigo de chat-->
+</body>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Enlaces</h3>
+            <a href="index.html">Inicio</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="Productos.html">Productos</a>
+            <a href="review.html">review</a>
+            <a href="Contacto.html">contactos</a>
+        </div>
+
+        <div class="box">
+            <h3>Màs enlaces</h3>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Mis ordenes</a>
+            <a href="#">Mis favoritos</a>
+        </div>
+
+        <div class="box">
+            <h3>Idiomas</h3>
+            <a href="#">Español</a>
+            <a href="#">Ingles</a>
+           
+        </div>
+
+        <div class="box">
+            <h3>Informaciòn de contacto</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">beliad@gmail.com</a>
+            <a href="#">Chihuahua, Mèxico - #2245</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> Creado por: <span> Equipo 3 </span> | Todos los derechos reservados 2022.</div>
+
+</section>
+
+</html>
