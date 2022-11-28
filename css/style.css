@@ -674,3 +674,160 @@ header .fa-bars{
     position: bottom;
     border-radius: 24px;
 }
+
+.borrar-platillo{
+   
+    border-radius: 50px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-weight: bold;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito
+{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+   
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background:rgba(245, 245, 245, 0.979);
+    padding: 20px;
+}
+
+.vacio{
+    padding: 10px;
+    background-color: #e84393;
+    text-align: center;
+    border: 10px;
+    color: #e6e6e6;
+
+}
+
+.button{
+   
+    color: #e6e6e6;
+}
+
+.lista-platillos.row{
+    margin-bottom:20px ;
+
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #e84393;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background: #333;
+}
+
+.th2{
+    color: #e84393;
+    font-size:medium;
+}
+
+.btn2{
+    
+    display:block;
+    margin-top: auto;
+    border-radius: 5rem;
+    background:#e84393;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
